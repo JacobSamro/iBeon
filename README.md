@@ -1,7 +1,7 @@
 iBeon
 =====
 
-a Validation and Filtering Security Project.
+Data Validation and Filtering Security Project.
 
 ## About iBeon
 
@@ -30,7 +30,7 @@ Overview of some of the features:
     echo ib_remNumbers($var);
 ?>
 ```
-The result will be Hello
+The result will be #Hello
 
 ##Removing the Symbols from the given input
 
@@ -40,4 +40,4 @@ The result will be Hello
     echo ib_remSymbols($var);
 ?>
 ```
-The result will be ABCD
+The result will be #ABCD
