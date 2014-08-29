@@ -63,9 +63,9 @@ function ib_countAlpabets($data)
 function ib_strNext($data)
 {
 	$dNum=array();
-	for ($i=0; $i < strlen($data); $i++) { 		$dNum[$i]=ord($data[$i])+1;	}
+	for ($i=0; $i < strlen($data); $i++) { 	$dNum[$i]=ord($data[$i])+1;	}
 	$data="";
-	for ($i=0; $i < sizeof($dNum); $i++) { 		$data.=chr($dNum[$i]);	}
+	for ($i=0; $i < sizeof($dNum); $i++) { 	$data.=chr($dNum[$i]);	}
 	return $data;
 }
 
