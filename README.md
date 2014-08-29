@@ -43,16 +43,6 @@ The result will be **Hello**
 ```
 The result will be **ABCD**
 
-##Removing the Symbols from the given input
-
-```php
-<?php
-    $var="ABC$#D";
-    echo ib_remSymbols($var);
-?>
-```
-The result will be **ABCD**
-
 ## Counting Functions
 
 ###Counting Integers
@@ -92,7 +82,7 @@ The result will be **123**
 ```php
 <?php
     $var="ABC$#D123";
-    echo ib_onlyNum($var);
+    echo ib_onlyAlpabets($var);
 ?>
 ```
 The result will be **ABCD**
