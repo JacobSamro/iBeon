@@ -30,3 +30,14 @@ Overview of some of the features:
     echo ib_remNumbers($var);
 ?>
 ```
+The result will be Hello
+
+##Removing the Symbols from the given input
+
+```php
+<?php
+    $var="ABC$#D";
+    echo ib_remSymbols($var);
+?>
+```
+The result will be ABCD
