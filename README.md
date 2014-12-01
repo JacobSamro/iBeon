@@ -32,7 +32,7 @@ $ib =   new ibeon;
 ```
 ## Remove Functions
 
-##Removing the Numbers from the given input
+##Removing the Numbers from a String
 
 ```php
 <?php
@@ -42,7 +42,7 @@ $ib =   new ibeon;
 ```
 The result will be **Hello**
 
-##Removing the Symbols from the given input
+##Removing the Symbols from a String
 
 ```php
 <?php
