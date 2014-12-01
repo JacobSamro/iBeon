@@ -1,11 +1,12 @@
-iBeon
+iBeon 2
 =====
+Enhanced Version of iBeon ( Data Validation and Filtering Security Project.)
 
-Data Validation and Filtering Security Project.
-
-## About iBeon
+## About iBeon 2
 
 iBeon itself having several functions to filter and validate data. By using this you can make your project much more easier.
+
+Python Version is also availiable in this repo ( onside python/ folder)
 
 Overview of some of the features:
 
@@ -21,6 +22,14 @@ Overview of some of the features:
     include('ibeon.php');
 ?>
 ```
+
+## Create new Object
+
+```php
+<?php
+$ib =   new ibeon;
+?>
+```
 ## Remove Functions
 
 ##Removing the Numbers from the given input
@@ -28,7 +37,7 @@ Overview of some of the features:
 ```php
 <?php
     $var="Hello11353";
-    echo ib_remNumbers($var);
+    echo $ib->remNumbers($var);
 ?>
 ```
 The result will be **Hello**
@@ -38,7 +47,7 @@ The result will be **Hello**
 ```php
 <?php
     $var="ABC$#D";
-    echo ib_remSymbols($var);
+    echo $ib->remSymbols($var);
 ?>
 ```
 The result will be **ABCD**
@@ -50,7 +59,7 @@ The result will be **ABCD**
 ```php
 <?php
     $var="ABC$#D123";
-    echo ib_countNum($var);
+    echo $ib->countNumbers($var);
 ?>
 ```
 The result will be **3**
@@ -60,7 +69,7 @@ The result will be **3**
 ```php
 <?php
     $var="ABC$#D123";
-    echo ib_countNum($var);
+    echo $ib->countAlpabets($var);
 ?>
 ```
 The result will be **4**
@@ -72,7 +81,7 @@ The result will be **4**
 ```php
 <?php
     $var="ABC$#D123";
-    echo ib_onlyNum($var);
+    echo $ib->onlyNumbers($var);
 ?>
 ```
 The result will be **123**
@@ -82,7 +91,7 @@ The result will be **123**
 ```php
 <?php
     $var="ABC$#D123";
-    echo ib_onlyAlpabets($var);
+    echo $ib->onlyAlpabets($var);
 ?>
 ```
 The result will be **ABCD**
@@ -94,7 +103,7 @@ The result will be **ABCD**
 ```php
 <?php
     $var="ABCD";
-    echo ib_strNext(($var);
+    echo $ib->strNext(($var);
 ?>
 ```
 The result will be **BCDE**
@@ -104,7 +113,7 @@ The result will be **BCDE**
 ```php
 <?php
     $var="BCDE";
-    echo ib_strPrev(($var);
+    echo $ib->strPrev(($var);
 ?>
 ```
 The result will be **ABCD**
