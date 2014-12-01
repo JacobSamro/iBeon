@@ -6,7 +6,7 @@ Enhanced Version of iBeon ( Data Validation and Filtering Security Project.)
 
 iBeon itself having several functions to filter and validate data. By using this you can make your project much more easier.
 
-Python Version is also availiable in this repo ( onside python/ folder)
+Python Version is also availiable in this repo ( inside python/ folder)
 
 Overview of some of the features:
 
