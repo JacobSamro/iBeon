@@ -1,43 +1,43 @@
 <?php
 /*
-Project iBeon
-@original authors Jacob Samro, Reshma Ramesh & Shree Gowtham
-@contributers GunaSekar
-@started on 25-7-2014 Friday 11:44 PM by Pencil
+Project iBeon 2
+@original author Jacob Samro
+@started on 01-12-2014 Monday @ 9:52 PM.
 */
 
+class ibeon {
 # removes all spaces
-function ib_remSpaces($data)
+function remSpaces($data)
 {
 	$data=str_replace(" ", "", $data);
 	return $data;
 }
 # removes all numbers
-function ib_remNumbers($data)
+function remNumbers($data)
 {
 	$data=preg_replace('/[0-9]+/',"", $data);
 	return $data;
 }
 # removes all symbols
-function ib_remSymbols($data)
+function remSymbols($data)
 {
 	$data=preg_replace('/[^\p{L}\p{N}\s]/u', '', $data);
 	return $data;
 }
 # removes all except numbers
-function ib_onlyNum($data)
+function onlyNumbers($data)
 {
 	$data=preg_replace("/[^0-9]/", "", $data);
 	return $data;
 }
 # removes all except alphabets
-function ib_onlyAlpabets($data)
+function onlyAlpabets($data)
 {
 	$data=preg_replace("/[^A-Za-z]/", "", $data);
 	return $data;
 }
 # return an integer value of number of "Spaces" in the givein input
-function ib_countSpaces($data)
+function countSpaces($data)
 {
 	$count=0;
 	for ($i=0; $i < strlen($data); $i++) { 
@@ -47,20 +47,20 @@ function ib_countSpaces($data)
 	return $count;
 }
 # return an integer value of number of "Numbers" in the givein input
-function ib_countNum($data)
+function countNumbers($data)
 {
 	$data=preg_replace("/[^0-9]/", "", $data);
 	return strlen($data);
 }
 
 # return an integer value of number of "Alpabets" in the givein input
-function ib_countAlpabets($data)
+function countAlpabets($data)
 {
 	$data=preg_replace("/[^A-Za-z]/", "", $data);
 	return strlen($data);
 }
 
-function ib_strNext($data)
+function strNext($data)
 {
 	$dNum=array();
 	for ($i=0; $i < strlen($data); $i++) { 	$dNum[$i]=ord($data[$i])+1;	}
@@ -69,12 +69,14 @@ function ib_strNext($data)
 	return $data;
 }
 
-function ib_strPrev($data)
+function strPrev($data)
 {
 	$dNum=array();
 	for ($i=0; $i < strlen($data); $i++) { 		$dNum[$i]=ord($data[$i])-1;	}
 	$data="";
 	for ($i=0; $i < sizeof($dNum); $i++) { 		$data.=chr($dNum[$i]);	}
 	return $data;
+}
+
 }
 ?>
