@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>iBeon by Aroliant</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>iBeon</h1>
+          <h2>Data Validation and Filtering Security Project.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Aroliant/iBeon/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Aroliant/iBeon/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Aroliant/iBeon" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="ibeon" class="anchor" href="#ibeon" aria-hidden="true"><span class="octicon octicon-link"></span></a>iBeon</h1>
+
+<p>Data Validation and Filtering Security Project.</p>
+
+<h2>
+<a id="about-ibeon" class="anchor" href="#about-ibeon" aria-hidden="true"><span class="octicon octicon-link"></span></a>About iBeon</h2>
+
+<p>iBeon itself having several functions to filter and validate data. By using this you can make your project much more easier.</p>
+
+<p>Overview of some of the features:</p>
+
+<ul>
+<li>Remove Functions</li>
+<li>Filter Functions</li>
+<li>Count Functions</li>
+</ul>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<h3>
+<a id="initialization" class="anchor" href="#initialization" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initialization</h3>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-k">include</span>(<span class="pl-s1"><span class="pl-pds">'</span>ibeon.php<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<h2>
+<a id="remove-functions" class="anchor" href="#remove-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove Functions</h2>
+
+<h2>
+<a id="removing-the-numbers-from-the-given-input" class="anchor" href="#removing-the-numbers-from-the-given-input" aria-hidden="true"><span class="octicon octicon-link"></span></a>Removing the Numbers from the given input</h2>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>Hello11353<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_remNumbers(<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>Hello</strong></p>
+
+<h2>
+<a id="removing-the-symbols-from-the-given-input" class="anchor" href="#removing-the-symbols-from-the-given-input" aria-hidden="true"><span class="octicon octicon-link"></span></a>Removing the Symbols from the given input</h2>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>ABC$#D<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_remSymbols(<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>ABCD</strong></p>
+
+<h2>
+<a id="counting-functions" class="anchor" href="#counting-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Counting Functions</h2>
+
+<h3>
+<a id="counting-integers" class="anchor" href="#counting-integers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Counting Integers</h3>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>ABC$#D123<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_countNum(<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>3</strong></p>
+
+<h3>
+<a id="counting-letters" class="anchor" href="#counting-letters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Counting Letters</h3>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>ABC$#D123<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_countNum(<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>4</strong></p>
+
+<h2>
+<a id="restricting-the-data-with-only-functions" class="anchor" href="#restricting-the-data-with-only-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Restricting the data with <em>Only Functions</em>
+</h2>
+
+<h3>
+<a id="restricting-all-except-numbers" class="anchor" href="#restricting-all-except-numbers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Restricting all except Numbers</h3>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>ABC$#D123<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_onlyNum(<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>123</strong></p>
+
+<h3>
+<a id="restricting-all-except-letters" class="anchor" href="#restricting-all-except-letters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Restricting all except Letters</h3>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>ABC$#D123<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_onlyAlpabets(<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>ABCD</strong></p>
+
+<h2>
+<a id="special-sting-functions" class="anchor" href="#special-sting-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Special Sting Functions</h2>
+
+<h3>
+<a id="string-next-function" class="anchor" href="#string-next-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>String Next Function</h3>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>ABCD<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_strNext((<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>BCDE</strong></p>
+
+<h3>
+<a id="string-prev-function" class="anchor" href="#string-prev-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>String Prev Function</h3>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$var</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>BCDE<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s2">    <span class="pl-s3">echo</span> ib_strPrev((<span class="pl-vo">$var</span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>The result will be <strong>ABCD</strong></p>
+        </section>
+
+        <footer>
+          iBeon is maintained by <a href="https://github.com/Aroliant">Aroliant</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+                  <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-29998850-6");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+      </div>
+    </div>
+  </body>
+</html>
